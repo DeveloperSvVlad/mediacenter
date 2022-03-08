@@ -1,0 +1,240 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?spmi9c');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?spmi9c#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?spmi9c') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?spmi9c') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?spmi9c##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="mc-"], [class*=" mc-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mc-alert {
+  &:before {
+    content: $mc-alert; 
+  }
+}
+.mc-bookmark {
+  &:before {
+    content: $mc-bookmark; 
+  }
+}
+.mc-emoji {
+  &:before {
+    content: $mc-emoji; 
+  }
+}
+.mc-reply {
+  &:before {
+    content: $mc-reply; 
+  }
+}
+.mc-volume {
+  &:before {
+    content: $mc-volume; 
+  }
+}
+.mc-time {
+  &:before {
+    content: $mc-time; 
+  }
+}
+.mc-act {
+  &:before {
+    content: $mc-act; 
+  }
+}
+.mc-sm-arrow {
+  &:before {
+    content: $mc-sm-arrow; 
+  }
+}
+.mc-sm-right-arrow {
+  &:before {
+    content: $mc-sm-right-arrow; 
+  }
+}
+.mc-arrow-right {
+  &:before {
+    content: $mc-arrow-right; 
+  }
+}
+.mc-calendar {
+  &:before {
+    content: $mc-calendar; 
+  }
+}
+.mc-card {
+  &:before {
+    content: $mc-card; 
+  }
+}
+.mc-check {
+  &:before {
+    content: $mc-check; 
+  }
+}
+.mc-close {
+  &:before {
+    content: $mc-close; 
+  }
+}
+.mc-comment {
+  &:before {
+    content: $mc-comment; 
+  }
+}
+.mc-delete {
+  &:before {
+    content: $mc-delete; 
+  }
+}
+.mc-document {
+  &:before {
+    content: $mc-document; 
+  }
+}
+.mc-edit {
+  &:before {
+    content: $mc-edit; 
+  }
+}
+.mc-eye {
+  &:before {
+    content: $mc-eye; 
+  }
+}
+.mc-facebook {
+  &:before {
+    content: $mc-facebook; 
+  }
+}
+.mc-fallowers {
+  &:before {
+    content: $mc-fallowers; 
+  }
+}
+.mc-global {
+  &:before {
+    content: $mc-global; 
+  }
+}
+.mc-message {
+  &:before {
+    content: $mc-message; 
+  }
+}
+.mc-inst {
+  &:before {
+    content: $mc-inst; 
+  }
+}
+.mc-like {
+  &:before {
+    content: $mc-like; 
+  }
+}
+.mc-log {
+  &:before {
+    content: $mc-log; 
+  }
+}
+.mc-message-2 {
+  &:before {
+    content: $mc-message-2; 
+  }
+}
+.mc-notify {
+  &:before {
+    content: $mc-notify; 
+  }
+}
+.mc-otklik {
+  &:before {
+    content: $mc-otklik; 
+  }
+}
+.mc-oxvat {
+  &:before {
+    content: $mc-oxvat; 
+  }
+}
+.mc-pass {
+  &:before {
+    content: $mc-pass; 
+  }
+}
+.mc-phone {
+  &:before {
+    content: $mc-phone; 
+  }
+}
+.mc-place {
+  &:before {
+    content: $mc-place; 
+  }
+}
+.mc-plus {
+  &:before {
+    content: $mc-plus; 
+  }
+}
+.mc-posts {
+  &:before {
+    content: $mc-posts; 
+  }
+}
+.mc-refresh {
+  &:before {
+    content: $mc-refresh; 
+  }
+}
+.mc-search {
+  &:before {
+    content: $mc-search; 
+  }
+}
+.mc-send {
+  &:before {
+    content: $mc-send; 
+  }
+}
+.mc-tik-tok {
+  &:before {
+    content: $mc-tik-tok; 
+  }
+}
+.mc-timer {
+  &:before {
+    content: $mc-timer; 
+  }
+}
+.mc-wallet {
+  &:before {
+    content: $mc-wallet; 
+  }
+}
+.mc-youtube {
+  &:before {
+    content: $mc-youtube; 
+  }
+}
+

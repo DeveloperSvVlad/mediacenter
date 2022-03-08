@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="robots" content="">
+  <link rel="short icon" href="">
+  <script src="https://kit.fontawesome.com/fe530b5d32.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="libs/swiper.min.css">
+  <link rel="stylesheet" href="libs/choices.min.css">
+  <link rel="stylesheet" href="libs/noUiSlider.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Настройки профиля исполнителя</title>
+</head>
+<body>
+  <div class="page-flex">
+    <!-- ?Подключение sidebar -->
+    
+    <aside class="aside js-aside aside-mob--white">
+        <div class="aside__content">
+            <div class="aside__logo logo">
+                <a class="logo__main" href="index-bloger.html">
+                    <img src="img/logo.svg" alt="MediaLogo">
+                </a>
+            </div>
+            <!-- Profile -->
+            <div class="aside__profile profile-aside">
+                <div class="profile-aside__wrapper">
+                    <div class="profile-aside__image">
+                        <span class="user-avatar">
+                            <img src="img/aside/profile-image-2.png" alt="">
+                        </span>
+                    </div>
+                    <div class="profile-aside__info">
+                        <h4 class="profile-aside__name">Анна</h4>
+                        <span class="profile-aside__status">Исполнитель</span>
+                    </div>
+                </div>
+                <span class="profile-aside__line"></span>
+                <a href="payments-doer.html" class="profile-aside__check profile-aside__check--arrow">
+                    <div class="profile-aside__icone icone">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.9993 9.33333H27.9993C28.353 9.33333 28.6921 9.47381 28.9422 9.72386C29.1922 9.97391 29.3327 10.313 29.3327 10.6667V26.6667C29.3327 27.0203 29.1922 27.3594 28.9422 27.6095C28.6921 27.8595 28.353 28 27.9993 28H3.99935C3.64573 28 3.30659 27.8595 3.05654 27.6095C2.80649 27.3594 2.66602 27.0203 2.66602 26.6667V5.33333C2.66602 4.97971 2.80649 4.64057 3.05654 4.39052C3.30659 4.14048 3.64573 4 3.99935 4H23.9993V9.33333ZM5.33268 12V25.3333H26.666V12H5.33268ZM5.33268 6.66667V9.33333H21.3327V6.66667H5.33268ZM19.9993 17.3333H23.9993V20H19.9993V17.3333Z" fill="var(--mc-aside-icone-color)"/>
+                        </svg>
+                    </div> 
+                    <div class="profile-aside__sum">125 000 <span>uzs</span></div>
+                </a> 
+            </div>
+            <!-- Aside menu -->
+            <div class="aside__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a href="index.html" class="menu__list-link active">
+                            <div class="menu__list-link-icone">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25.334 28.0001H6.66732C6.3137 28.0001 5.97456 27.8596 5.72451 27.6095C5.47446 27.3595 5.33398 27.0203 5.33398 26.6667V14.6667H1.33398L15.1033 2.14939C15.3488 1.92603 15.6688 1.80225 16.0007 1.80225C16.3325 1.80225 16.6525 1.92603 16.898 2.14939L30.6673 14.6667H26.6673V26.6667C26.6673 27.0203 26.5268 27.3595 26.2768 27.6095C26.0267 27.8596 25.6876 28.0001 25.334 28.0001ZM17.334 25.3334H24.0006V12.2094L16.0007 4.93739L8.00065 12.2094V25.3334H14.6673V17.3334H17.334V25.3334Z"/>
+                                </svg>
+                            </div>
+                            Главная
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <button class="menu__list-link menu__dropdown js-menu-dropdown">
+                            <div class="menu__list-link-icone">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.66602 29.3335C2.66602 26.5045 3.78982 23.7914 5.79021 21.791C7.7906 19.7906 10.5037 18.6668 13.3327 18.6668C16.1617 18.6668 18.8748 19.7906 20.8752 21.791C22.8755 23.7914 23.9993 26.5045 23.9993 29.3335H21.3327C21.3327 27.2118 20.4898 25.1769 18.9895 23.6766C17.4892 22.1764 15.4544 21.3335 13.3327 21.3335C11.211 21.3335 9.17612 22.1764 7.67583 23.6766C6.17554 25.1769 5.33268 27.2118 5.33268 29.3335H2.66602ZM13.3327 17.3335C8.91268 17.3335 5.33268 13.7535 5.33268 9.3335C5.33268 4.9135 8.91268 1.3335 13.3327 1.3335C17.7527 1.3335 21.3327 4.9135 21.3327 9.3335C21.3327 13.7535 17.7527 17.3335 13.3327 17.3335ZM13.3327 14.6668C16.2793 14.6668 18.666 12.2802 18.666 9.3335C18.666 6.38683 16.2793 4.00016 13.3327 4.00016C10.386 4.00016 7.99935 6.38683 7.99935 9.3335C7.99935 12.2802 10.386 14.6668 13.3327 14.6668ZM24.378 19.6042C26.2518 20.4481 27.842 21.8152 28.9575 23.5411C30.0729 25.2671 30.6662 27.2784 30.666 29.3335H27.9993C27.9997 27.7921 27.5548 26.2835 26.7181 24.9889C25.8815 23.6944 24.6888 22.669 23.2833 22.0362L24.3767 19.6042H24.378ZM23.4607 4.55083C24.804 5.10456 25.9526 6.04488 26.7607 7.25247C27.5688 8.46006 27.9999 9.88048 27.9993 11.3335C27.9999 13.1633 27.3163 14.9271 26.0827 16.2786C24.8492 17.6301 23.1549 18.4715 21.3327 18.6375V15.9535C22.3206 15.812 23.2371 15.3575 23.9478 14.6568C24.6584 13.956 25.1256 13.0459 25.2809 12.0601C25.4362 11.0742 25.2713 10.0646 24.8105 9.1793C24.3497 8.29404 23.6173 7.57982 22.7207 7.1415L23.4607 4.55083V4.55083Z"/>
+                                </svg>
+                            </div>
+                            Тендеры
+                        </button>
+                        <ul class="menu__dropdown-list">
+                            <li class="menu__dropdown-list-item"><a href="favorite-work-list.html">Список заданий</a></li>
+                            <li class="menu__dropdown-list-item"><a href="favorite-hirer.html">Избранные</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__list-item">
+                        <button class="menu__list-link menu__dropdown js-menu-dropdown">
+                            <div class="menu__list-link-icone">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.33268 6.66683V2.66683C9.33268 2.31321 9.47316 1.97407 9.72321 1.72402C9.97326 1.47397 10.3124 1.3335 10.666 1.3335H21.3327C21.6863 1.3335 22.0254 1.47397 22.2755 1.72402C22.5255 1.97407 22.666 2.31321 22.666 2.66683V6.66683H27.9993C28.353 6.66683 28.6921 6.80731 28.9422 7.05735C29.1922 7.3074 29.3327 7.64654 29.3327 8.00016V26.6668C29.3327 27.0204 29.1922 27.3596 28.9422 27.6096C28.6921 27.8597 28.353 28.0002 27.9993 28.0002H3.99935C3.64573 28.0002 3.30659 27.8597 3.05654 27.6096C2.80649 27.3596 2.66602 27.0204 2.66602 26.6668V8.00016C2.66602 7.64654 2.80649 7.3074 3.05654 7.05735C3.30659 6.80731 3.64573 6.66683 3.99935 6.66683H9.33268ZM26.666 17.3335H5.33268V25.3335H26.666V17.3335ZM26.666 9.3335H5.33268V14.6668H9.33268V12.0002H11.9993V14.6668H19.9993V12.0002H22.666V14.6668H26.666V9.3335ZM11.9993 4.00016V6.66683H19.9993V4.00016H11.9993Z"/>
+                                </svg>
+                            </div>
+                            Активные проекты
+                        </button>
+                        <ul class="menu__dropdown-list">
+                            <li class="menu__dropdown-list-item"><a href="feedback.html">Отклики и предложения <span>(6)</span></a></li>
+                            <li class="menu__dropdown-list-item"><a href="in-work.html">В работе <span>(4)</span></a></li>
+                            <li class="menu__dropdown-list-item"><a href="finish-project.html">Выполненные</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="settings-doer-main.html" class="menu__list-link">
+                            <div class="menu__list-link-icone">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.45244 22.6664C3.8888 21.6917 3.45066 20.6497 3.14844 19.5651C3.80618 19.2306 4.35856 18.7206 4.74448 18.0916C5.13039 17.4626 5.33479 16.7392 5.33507 16.0012C5.33534 15.2633 5.13148 14.5397 4.74604 13.9104C4.3606 13.2812 3.8086 12.7708 3.1511 12.4358C3.75382 10.2564 4.90141 8.26637 6.48577 6.6531C7.10456 7.0554 7.8226 7.27865 8.56041 7.29814C9.29822 7.31763 10.027 7.13261 10.6662 6.76354C11.3054 6.39448 11.83 5.85576 12.1819 5.20702C12.5339 4.55827 12.6995 3.8248 12.6604 3.08776C14.8499 2.52193 17.1474 2.52284 19.3364 3.09043C19.2977 3.82745 19.4636 4.56082 19.8159 5.20937C20.1681 5.85793 20.6929 6.3964 21.3322 6.76518C21.9715 7.13396 22.7004 7.31868 23.4381 7.2989C24.1759 7.27912 24.8938 7.05561 25.5124 6.6531C26.2844 7.43976 26.9698 8.33443 27.5458 9.3331C28.1231 10.3318 28.5551 11.3731 28.8498 12.4344C28.192 12.769 27.6396 13.2789 27.2537 13.9079C26.8678 14.5369 26.6634 15.2604 26.6631 15.9983C26.6629 16.7362 26.8667 17.4598 27.2522 18.0891C27.6376 18.7184 28.1896 19.2287 28.8471 19.5638C28.2444 21.7431 27.0968 23.7332 25.5124 25.3464C24.8936 24.9441 24.1756 24.7209 23.4378 24.7014C22.7 24.6819 21.9712 24.8669 21.332 25.236C20.6928 25.6051 20.1682 26.1438 19.8163 26.7925C19.4643 27.4413 19.2987 28.1747 19.3378 28.9118C17.1483 29.4776 14.8508 29.4767 12.6618 28.9091C12.7005 28.1721 12.5346 27.4387 12.1823 26.7902C11.8301 26.1416 11.3053 25.6031 10.666 25.2344C10.0267 24.8656 9.29784 24.6808 8.56007 24.7006C7.8223 24.7204 7.10439 24.9439 6.48577 25.3464C5.69776 24.5424 5.01456 23.6419 4.45244 22.6664V22.6664ZM11.9991 22.9278C13.4199 23.7473 14.4882 25.0625 14.9991 26.6211C15.6644 26.6838 16.3324 26.6851 16.9978 26.6224C17.509 25.0636 18.5778 23.7484 19.9991 22.9291C21.4194 22.1073 23.0931 21.8391 24.6991 22.1758C25.0858 21.6318 25.4191 21.0518 25.6964 20.4451C24.6023 19.223 23.9979 17.64 23.9991 15.9998C23.9991 14.3198 24.6258 12.7504 25.6964 11.5544C25.4171 10.948 25.0824 10.3686 24.6964 9.82376C23.0915 10.1602 21.4188 9.8924 19.9991 9.07176C18.5783 8.25226 17.51 6.93707 16.9991 5.37843C16.3338 5.31576 15.6658 5.31443 15.0004 5.3771C14.4892 6.93596 13.4204 8.25118 11.9991 9.07043C10.5788 9.89218 8.90507 10.1605 7.2991 9.82376C6.91319 10.3681 6.57928 10.9476 6.30177 11.5544C7.39586 12.7765 8.00028 14.3595 7.9991 15.9998C7.9991 17.6798 7.37244 19.2491 6.30177 20.4451C6.58107 21.0516 6.91582 21.6309 7.30177 22.1758C8.90673 21.8394 10.5794 22.1071 11.9991 22.9278ZM15.9991 19.9998C14.9382 19.9998 13.9208 19.5783 13.1707 18.8282C12.4205 18.078 11.9991 17.0606 11.9991 15.9998C11.9991 14.9389 12.4205 13.9215 13.1707 13.1713C13.9208 12.4212 14.9382 11.9998 15.9991 11.9998C17.06 11.9998 18.0774 12.4212 18.8275 13.1713C19.5777 13.9215 19.9991 14.9389 19.9991 15.9998C19.9991 17.0606 19.5777 18.078 18.8275 18.8282C18.0774 19.5783 17.06 19.9998 15.9991 19.9998ZM15.9991 17.3331C16.3527 17.3331 16.6919 17.1926 16.9419 16.9426C17.192 16.6925 17.3324 16.3534 17.3324 15.9998C17.3324 15.6461 17.192 15.307 16.9419 15.057C16.6919 14.8069 16.3527 14.6664 15.9991 14.6664C15.6455 14.6664 15.3063 14.8069 15.0563 15.057C14.8062 15.307 14.6658 15.6461 14.6658 15.9998C14.6658 16.3534 14.8062 16.6925 15.0563 16.9426C15.3063 17.1926 15.6455 17.3331 15.9991 17.3331V17.3331Z"/>
+                                    </svg>
+                            </div>
+                            Настройки профиля
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Aside menu secondary -->
+            <div class="aside__links aside__links--line">
+                <div class="aside__links-item">
+                    <a href="faq.html" class="aside__links-link">Часто задаваемые вопросы</a>
+                </div>
+                <div class="aside__links-item">
+                    <a href="news.html" class="aside__links-link">Новости</a>
+                </div>
+                <div class="aside__links-item">
+                    <a href="about-project.html" class="aside__links-link">О проекте</a>
+                </div>
+                <div class="aside__links-item">
+                    <a href="agreement.html" class="aside__links-link">Пользовательское соглашение</a>
+                </div>
+                <div class="aside__links-item">
+                    <a href="politics.html" class="aside__links-link">Политика конфиденциальности</a>
+                </div>
+                <div class="aside__links-item">
+                    <a href="contacts.html" class="aside__links-link">Контакты</a>
+                </div>
+            </div>
+            <!-- Aside footer -->
+            <div class="aside__footer">
+                <div class="aside__footer-link">
+                    <a href="#" class="main-link">Media Center</a>
+                </div>
+                <div class="aside__footer-social social-main">
+                    <div class="social-main__grid">
+                        <a href="#" class="social-main__item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.402 21V14.034H17.735L18.084 11.326H15.402V9.598C15.402 8.814 15.62 8.279 16.744 8.279H18.178V5.857C17.4838 5.78334 16.7861 5.74762 16.088 5.75C14.021 5.75 12.606 7.012 12.606 9.33V11.326H10.268V14.034H12.606V21H4C3.73478 21 3.48043 20.8946 3.29289 20.7071C3.10536 20.5196 3 20.2652 3 20V4C3 3.73478 3.10536 3.48043 3.29289 3.29289C3.48043 3.10536 3.73478 3 4 3H20C20.2652 3 20.5196 3.10536 20.7071 3.29289C20.8946 3.48043 21 3.73478 21 4V20C21 20.2652 20.8946 20.5196 20.7071 20.7071C20.5196 20.8946 20.2652 21 20 21H15.402Z" />
+                            </svg>   
+                        </a>
+                        <a href="#" class="social-main__item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C14.717 2 15.056 2.01 16.122 2.06C17.187 2.11 17.912 2.277 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8305 4.1779 21.224 4.78259 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.987 8.944 22 9.283 22 12C22 14.717 21.99 15.056 21.94 16.122C21.89 17.187 21.722 17.912 21.475 18.55C21.2247 19.2178 20.8311 19.8226 20.322 20.322C19.822 20.8303 19.2173 21.2238 18.55 21.475C17.913 21.722 17.187 21.89 16.122 21.94C15.056 21.987 14.717 22 12 22C9.283 22 8.944 21.99 7.878 21.94C6.813 21.89 6.088 21.722 5.45 21.475C4.78233 21.2245 4.17753 20.8309 3.678 20.322C3.16941 19.8222 2.77593 19.2175 2.525 18.55C2.277 17.913 2.11 17.187 2.06 16.122C2.013 15.056 2 14.717 2 12C2 9.283 2.01 8.944 2.06 7.878C2.11 6.812 2.277 6.088 2.525 5.45C2.77524 4.78218 3.1688 4.17732 3.678 3.678C4.17767 3.16923 4.78243 2.77573 5.45 2.525C6.088 2.277 6.812 2.11 7.878 2.06C8.944 2.013 9.283 2 12 2ZM12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12C7 13.3261 7.52678 14.5979 8.46447 15.5355C9.40215 16.4732 10.6739 17 12 17C13.3261 17 14.5979 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7ZM18.5 6.75C18.5 6.41848 18.3683 6.10054 18.1339 5.86612C17.8995 5.6317 17.5815 5.5 17.25 5.5C16.9185 5.5 16.6005 5.6317 16.3661 5.86612C16.1317 6.10054 16 6.41848 16 6.75C16 7.08152 16.1317 7.39946 16.3661 7.63388C16.6005 7.8683 16.9185 8 17.25 8C17.5815 8 17.8995 7.8683 18.1339 7.63388C18.3683 7.39946 18.5 7.08152 18.5 6.75ZM12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9Z"/>
+                                </svg>
+                        </a>
+                        <a href="#" class="social-main__item">
+                            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.84765 11.6505L7.51682 16.3039C7.99015 16.3039 8.19515 16.1005 8.44099 15.8564L10.6602 13.7355L15.2585 17.103C16.1018 17.573 16.696 17.3255 16.9235 16.3272L19.9418 2.18385L19.9427 2.18302C20.2102 0.936354 19.4918 0.448854 18.6702 0.754687L0.928482 7.54719C-0.282352 8.01719 -0.264019 8.69219 0.722649 8.99802L5.25848 10.4089L15.7943 3.81635C16.2902 3.48802 16.741 3.66969 16.3702 3.99802L7.84765 11.6505Z"/>
+                            </svg>    
+                        </a>
+                        <a href="#" class="social-main__item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.543 6.498C22 8.28 22 12 22 12C22 12 22 15.72 21.543 17.502C21.289 18.487 20.546 19.262 19.605 19.524C17.896 20 12 20 12 20C12 20 6.107 20 4.395 19.524C3.45 19.258 2.708 18.484 2.457 17.502C2 15.72 2 12 2 12C2 12 2 8.28 2.457 6.498C2.711 5.513 3.454 4.738 4.395 4.476C6.107 4 12 4 12 4C12 4 17.896 4 19.605 4.476C20.55 4.742 21.292 5.516 21.543 6.498ZM10 15.5L16 12L10 8.5V15.5Z"/>
+                            </svg>    
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="aside__mobile">
+                <div class="language pd-pr ">
+                    <button class="language__btn js-language-btn"><img class="language__image" src="img/header/language-ru.svg" alt=""><span>рус</span></button>
+                    <div class="language__content js-content">
+                        <a href="#" class="language__link"><img class="language__image" src="img/header/language-ru.svg" alt=""><span>узб</span></a>
+                        <a href="#" class="language__link"><img class="language__image" src="img/header/language-ru.svg" alt=""><span>eng</span></a>
+                    </div>
+                </div>
+                <div class="aside__mobile-exit">
+                    <a href="#" class="header__exit-link">
+                        Выход
+                        <div class="header__exit-icone">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.00065 14.6663C4.31865 14.6663 1.33398 11.6817 1.33398 7.99968C1.33398 4.31768 4.31865 1.33301 8.00065 1.33301C9.03575 1.33223 10.0568 1.57286 10.9826 2.03577C11.9084 2.49868 12.7135 3.17113 13.334 3.99968H11.5273C10.7575 3.32085 9.8081 2.87858 8.79313 2.72594C7.77815 2.5733 6.74069 2.71678 5.80524 3.13915C4.86979 3.56152 4.07608 4.24485 3.51936 5.10713C2.96264 5.96942 2.66656 6.97403 2.66665 8.00041C2.66673 9.0268 2.96298 10.0314 3.51985 10.8936C4.07671 11.7557 4.87053 12.4389 5.80605 12.8612C6.74157 13.2834 7.77906 13.4267 8.79401 13.2739C9.80895 13.1211 10.7583 12.6786 11.528 11.9997H13.3347C12.7141 12.8283 11.9089 13.5008 10.983 13.9637C10.057 14.4266 9.03587 14.6672 8.00065 14.6663ZM12.6673 10.6663V8.66634H7.33398V7.33301H12.6673V5.33301L16.0007 7.99968L12.6673 10.6663Z"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+      <div class="main">
+        <!-- ?Подключение Header -->
+        <header class="header">
+  <div class="_container">
+    <div class="header__row m-neg">
+      <div class="aside__burger pd-pr ">
+        <button class="burger-aside js-btn-aside-show">
+          <span></span>
+        </button>
+      </div>
+      <div class="header__start pd-pr ">
+        <a href="index.html" class="header__logo-mobile">
+            <img src="img/mlogo.svg" alt="">
+        </a>
+        <a href="page__placing.html" class="header__task btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.83398 7.83301V0.833008H10.1673V7.83301H17.1673V10.1663H10.1673V17.1663H7.83398V10.1663H0.833984V7.83301H7.83398Z" fill="white"/>
+          </svg>
+          Разместить задание
+        </a>
+      </div>
+      <div class="header__end pd-pr ">
+        <div class="header__search search-header pd-pr ">
+          <form action="#" class="search-header__wrapper">
+              <input type="text" class="search-header__input js-header-search-input" placeholder="Найти специалиста или статью">
+              <button class="search-header__btn"><i class="mc-search"></i></button>
+              <div class="search-list">
+                <div class="search-list__wrapper scroll-moz scroll-bar scroll-thumb gm-prevented">
+                  <div class="search-list__item search-list__item--category">
+                    <a href="#">
+                      <div class="search-list__category">
+                          <div class="search-list__main">Дизайнер</div>
+                          <span class="search-list__category-any">в рубрике Специалисты</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="search-list__item search-list__item--category">
+                    <a href="#">
+                      <div class="search-list__category">
+                          <div class="search-list__main">Дизайнер</div>
+                          <span class="search-list__category-any">в рубрике Специалисты</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="search-list__item"><a href="#">Дизайнер <span>верстальшик</span></a></div>
+                  <div class="search-list__item"><a href="#">Дизайнер <span>верстальшик</span></a></div>
+              </div>
+              </div>
+          </form>
+        </div>
+        <div class="header__notific notific">
+          <div class="notific__item">
+            <div class="notific__link notific__link--pv">
+                <div class="notific__link-icone">
+                  <i class="mc-notify"></i>
+                </div>
+                <span class="notific__link-number">2</span>
+                <div class="notific__block block-notific fix-mobile">
+                    <div class="block-notific__head">
+                      <h4 class="block-notific__title title title-others">Уведомление</h4>
+                    </div>
+                    <div class="block-notific__wrapper">
+                      <div class="block-notific__content scroll-moz gm-prevented scroll-bar scroll-thumb">
+                          <a href="#" class="block-notific__item">
+                            <div class="block-notific__name">Новое предложение</div>
+                            <div class="block-notific__time">22 июня, 11:51</div>
+                          </a>
+                          <a href="#" class="block-notific__item">
+                            <div class="block-notific__name">Счет пополнен</div>
+                            <div class="block-notific__time">22 июня, 11:51</div>
+                          </a>
+                          <a href="#" class="block-notific__item">
+                            <div class="block-notific__name">Привлечение клиентов на новую торг...</div>
+                            <div class="block-notific__status color-danger">Вам отказали</div>
+                            <div class="block-notific__time">22 июня, 11:51</div>
+                          </a>
+                          <a href="#" class="block-notific__item">
+                            <div class="block-notific__name">Привлечение клиентов на новую торг...</div>
+                            <div class="block-notific__status color-succes">Вас выбрали исполнителем</div>
+                            <div class="block-notific__time">22 июня, 11:51</div>
+                          </a>
+                      </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="notific__item">
+            <div class="notific__link notific__link--pv">
+              <div class="notific__link-icone">
+                <i class="mc-message-2"></i>
+              </div>
+              <span class="notific__link-number">5</span>
+              <div class="notific__block block-notific">
+                <div class="block-notific__head m-neg">
+                  <h4 class="block-notific__title title title-others pd-pr">Сообшение</h4>
+                  <a href="chat.html" class="link-s pd-pr">Показать все</a>
+                </div>
+                <div class="block-notific__content chat chat--notific scroll-moz gm-prevented scroll-bar scroll-thumb">
+                    <ul class="chat__list">
+                      <li class="chat__list-item">
+                        <div class="chat__list-avatar">
+                            <span class="chat__list-avatar-status chat__list-avatar-status--online"></span>
+                            <span class="user-avatar">
+                                <img src="img/chat/chat-1.png" alt="">
+                            </span>
+                        </div>
+                        <div class="chat__list-content">
+                          <div class="chat__list-time">25 минут назад</div>
+                          <div class="chat__list-user">Азиза Алимова</div>
+                          <div class="chat__list-message-content">
+                              <div class="chat__list-message-wrapper">Привет Александр! В этом блоке мы рекоме...</div>
+                              <div class="chat__list-message-status-wrapper">
+                                  <div class="cm-check cm-check-read"></div>
+                              </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="chat__list-item">
+                        <div class="chat__list-avatar">
+                            <span class="chat__list-avatar-status chat__list-avatar-status--online"></span>
+                            <span class="user-avatar">
+                                <img src="img/chat/chat-4.png" alt="">
+                            </span>
+                        </div>
+                        <div class="chat__list-content">
+                          <div class="chat__list-time">25 минут назад</div>
+                          <div class="chat__list-user">Дима Перов</div>
+                          <div class="chat__list-message-content">
+                              <div class="chat__list-message-wrapper">Привет Александр! В этом блоке мы рекоме...</div>
+                              <div class="chat__list-message-status-wrapper">
+                                <div class="cm-check cm-check-sended"></div>
+                              </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="chat__list-item">
+                        <div class="chat__list-avatar">
+                            <span class="chat__list-avatar-status chat__list-avatar-status--offline"></span>
+                            <span class="user-avatar">
+                                <img src="img/chat/chat-6.png" alt="">
+                            </span>
+                        </div>
+                        <div class="chat__list-content">
+                          <div class="chat__list-time">22 июня, 11:51</div>
+                          <div class="chat__list-user">Камол</div>
+                          <div class="chat__list-message-content">
+                              <div class="chat__list-message-wrapper">Привет Александр! В этом блоке мы рекоме...</div>
+                              <div class="chat__list-message-status-wrapper">
+                                <div class="chat__list-message-status"><span>3</span></div>
+                              </div>
+                              
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__language language pd-pr ">
+          <button class="language__btn js-language-btn"><img class="language__image" src="img/header/language-ru.svg" alt=""><span>рус</span></button>
+          <div class="language__content js-content">
+              <a href="#" class="language__link"><img class="language__image" src="img/header/language-ru.svg" alt=""><span>узб</span></a>
+              <a href="#" class="language__link"><img class="language__image" src="img/header/language-ru.svg" alt=""><span>eng</span></a>
+          </div>
+        </div>
+        <div class="header__exit pd-pr ">
+          <a href="#" class="header__exit-link">
+            Выход
+            <div class="header__exit-icone">
+              <i class="mc-log"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Мобильное меню -->
+<div class="mobile-menu">
+  <div class="mobile-menu__row">
+    <a href="index.html" class="mobile-menu__item active">
+      <div class="mobile-menu__icone">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16.3636 18.6961H3.63636C3.39526 18.6961 3.16403 18.6003 2.99354 18.4299C2.82305 18.2594 2.72727 18.0281 2.72727 17.787V9.60522H0L9.38818 1.07067C9.55556 0.91838 9.77371 0.833984 10 0.833984C10.2263 0.833984 10.4444 0.91838 10.6118 1.07067L20 9.60522H17.2727V17.787C17.2727 18.0281 17.177 18.2594 17.0065 18.4299C16.836 18.6003 16.6047 18.6961 16.3636 18.6961ZM4.54545 16.8779H15.4545V7.92976L10 2.97158L4.54545 7.92976V16.8779ZM8 13.2416H12V15.0598H8V13.2416Z"/>
+          </svg>
+      </div>
+      <span class="mobile-menu__text">Главная</span>
+    </a>
+    <a href="search.html" class="mobile-menu__item">
+      <div class="mobile-menu__icone">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15.0252 13.8469L18.5943 17.4152L17.4152 18.5943L13.8469 15.0252C12.5191 16.0895 10.8677 16.6684 9.16602 16.666C5.02602 16.666 1.66602 13.306 1.66602 9.16602C1.66602 5.02602 5.02602 1.66602 9.16602 1.66602C13.306 1.66602 16.666 5.02602 16.666 9.16602C16.6684 10.8677 16.0895 12.5191 15.0252 13.8469ZM13.3535 13.2285C14.4111 12.1409 15.0017 10.683 14.9993 9.16602C14.9993 5.94268 12.3885 3.33268 9.16602 3.33268C5.94268 3.33268 3.33268 5.94268 3.33268 9.16602C3.33268 12.3885 5.94268 14.9993 9.16602 14.9993C10.683 15.0017 12.1409 14.4111 13.2285 13.3535L13.3535 13.2285Z"/>
+        </svg>
+      </div>
+      <span class="mobile-menu__text">Поиск</span>
+    </a>
+    <a href="page__placing.html" class="mobile-menu__item">
+      <div class="mobile-menu__icone">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.16602 9.16602V5.83268H10.8327V9.16602H14.166V10.8327H10.8327V14.166H9.16602V10.8327H5.83268V9.16602H9.16602ZM9.99935 18.3327C5.39685 18.3327 1.66602 14.6018 1.66602 9.99935C1.66602 5.39685 5.39685 1.66602 9.99935 1.66602C14.6018 1.66602 18.3327 5.39685 18.3327 9.99935C18.3327 14.6018 14.6018 18.3327 9.99935 18.3327ZM9.99935 16.666C11.7675 16.666 13.4632 15.9636 14.7134 14.7134C15.9636 13.4632 16.666 11.7675 16.666 9.99935C16.666 8.23124 15.9636 6.53555 14.7134 5.2853C13.4632 4.03506 11.7675 3.33268 9.99935 3.33268C8.23124 3.33268 6.53555 4.03506 5.2853 5.2853C4.03506 6.53555 3.33268 8.23124 3.33268 9.99935C3.33268 11.7675 4.03506 13.4632 5.2853 14.7134C6.53555 15.9636 8.23124 16.666 9.99935 16.666Z"/>
+          </svg>
+          
+      </div>
+      <span class="mobile-menu__text">Создать</span>
+    </a>
+    <a href="settings-user.html" class="mobile-menu__item">
+      <div class="mobile-menu__icone">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.78375 14.1675C2.43148 13.5583 2.15764 12.907 1.96875 12.2292C2.37984 12.0201 2.72508 11.7014 2.96627 11.3082C3.20747 10.9151 3.33522 10.463 3.33539 10.0018C3.33557 9.54055 3.20815 9.08829 2.96725 8.695C2.72635 8.30171 2.38135 7.98272 1.97042 7.77333C2.34711 6.41123 3.06436 5.16746 4.05458 4.15916C4.44133 4.4106 4.8901 4.55013 5.35123 4.56231C5.81236 4.5745 6.26788 4.45885 6.66736 4.22819C7.06684 3.99752 7.39471 3.66083 7.61469 3.25536C7.83467 2.8499 7.93817 2.39148 7.91375 1.93083C9.28217 1.57718 10.7181 1.57775 12.0863 1.9325C12.062 2.39313 12.1658 2.85149 12.3859 3.25684C12.606 3.66218 12.934 3.99872 13.3336 4.22921C13.7332 4.4597 14.1887 4.57515 14.6498 4.56279C15.1109 4.55043 15.5596 4.41073 15.9462 4.15916C16.4288 4.65083 16.8571 5.21 17.2171 5.83416C17.5779 6.45833 17.8479 7.10916 18.0321 7.7725C17.621 7.98158 17.2758 8.30031 17.0346 8.69342C16.7934 9.08653 16.6656 9.5387 16.6654 9.9999C16.6653 10.4611 16.7927 10.9134 17.0336 11.3067C17.2745 11.7 17.6195 12.0189 18.0304 12.2283C17.6537 13.5904 16.9365 14.8342 15.9462 15.8425C15.5595 15.5911 15.1107 15.4515 14.6496 15.4393C14.1885 15.4272 13.733 15.5428 13.3335 15.7735C12.934 16.0041 12.6061 16.3408 12.3861 16.7463C12.1662 17.1518 12.0627 17.6102 12.0871 18.0708C10.7187 18.4245 9.28272 18.4239 7.91458 18.0692C7.93879 17.6085 7.83508 17.1502 7.61493 16.7448C7.39479 16.3395 7.06679 16.0029 6.66723 15.7724C6.26767 15.542 5.81213 15.4265 5.35102 15.4389C4.88991 15.4512 4.44122 15.5909 4.05458 15.8425C3.56208 15.3399 3.13508 14.7772 2.78375 14.1675ZM7.50042 14.3308C8.38844 14.843 9.05612 15.665 9.37542 16.6392C9.79125 16.6783 10.2087 16.6792 10.6246 16.64C10.9441 15.6657 11.6121 14.8437 12.5004 14.3317C13.3881 13.8181 14.4342 13.6504 15.4379 13.8608C15.6796 13.5208 15.8879 13.1583 16.0613 12.7792C15.3774 12.0154 14.9997 11.026 15.0004 10.0008C15.0004 8.95083 15.3921 7.97 16.0613 7.2225C15.8867 6.84345 15.6775 6.48136 15.4363 6.14083C14.4332 6.35109 13.3877 6.18373 12.5004 5.67083C11.6124 5.15864 10.9447 4.33665 10.6254 3.3625C10.2096 3.32333 9.79208 3.3225 9.37625 3.36166C9.05675 4.33595 8.38875 5.15796 7.50042 5.67C6.61274 6.18359 5.56665 6.35126 4.56292 6.14083C4.32172 6.48107 4.11303 6.84321 3.93958 7.2225C4.62339 7.9863 5.00115 8.97565 5.00042 10.0008C5.00042 11.0508 4.60875 12.0317 3.93958 12.7792C4.11414 13.1582 4.32337 13.5203 4.56458 13.8608C5.56768 13.6506 6.61309 13.8179 7.50042 14.3308ZM10.0004 12.5008C9.33738 12.5008 8.70149 12.2374 8.23265 11.7686C7.76381 11.2998 7.50042 10.6639 7.50042 10.0008C7.50042 9.33779 7.76381 8.7019 8.23265 8.23306C8.70149 7.76422 9.33738 7.50083 10.0004 7.50083C10.6635 7.50083 11.2993 7.76422 11.7682 8.23306C12.237 8.7019 12.5004 9.33779 12.5004 10.0008C12.5004 10.6639 12.237 11.2998 11.7682 11.7686C11.2993 12.2374 10.6635 12.5008 10.0004 12.5008ZM10.0004 10.8342C10.2214 10.8342 10.4334 10.7464 10.5897 10.5901C10.746 10.4338 10.8337 10.2218 10.8337 10.0008C10.8337 9.77981 10.746 9.56785 10.5897 9.41157C10.4334 9.25529 10.2214 9.1675 10.0004 9.1675C9.7794 9.1675 9.56744 9.25529 9.41116 9.41157C9.25488 9.56785 9.16708 9.77981 9.16708 10.0008C9.16708 10.2218 9.25488 10.4338 9.41116 10.5901C9.56744 10.7464 9.7794 10.8342 10.0004 10.8342Z"/>
+          </svg>
+          
+      </div>
+      <span class="mobile-menu__text">Настройки</span>
+    </a>
+    <a href="payments.html" class="mobile-menu__item">
+      <div class="mobile-menu__icone">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14.9993 5.83333H17.4993C17.7204 5.83333 17.9323 5.92113 18.0886 6.07741C18.2449 6.23369 18.3327 6.44565 18.3327 6.66667V16.6667C18.3327 16.8877 18.2449 17.0996 18.0886 17.2559C17.9323 17.4122 17.7204 17.5 17.4993 17.5H2.49935C2.27834 17.5 2.06637 17.4122 1.91009 17.2559C1.75381 17.0996 1.66602 16.8877 1.66602 16.6667V3.33333C1.66602 3.11232 1.75381 2.90036 1.91009 2.74408C2.06637 2.5878 2.27834 2.5 2.49935 2.5H14.9993V5.83333ZM3.33268 7.5V15.8333H16.666V7.5H3.33268ZM3.33268 4.16667V5.83333H13.3327V4.16667H3.33268ZM12.4993 10.8333H14.9993V12.5H12.4993V10.8333Z"/>
+        </svg>  
+      </div>
+      <span class="mobile-menu__text">Cчет</span>
+    </a>
+  </div>
+</div>
+
+<!-- Модалка для пополнение счета -->
+<div class="popup popup-payment">
+  <div class="popup__wrapper">
+      <div class="popup__inner">
+          <div class="popup__body">
+              <div class="popup__head">
+                <div class="popup__head-row">
+                    <div class="popup__head-icone">
+                        <i class="mc-wallet"></i>
+                    </div>
+                    <h3 class="popup__title title title-secondary">Пополнение счета</h3>
+                </div>
+                <button class="popup__btn-close"></button>
+              </div>
+              <div class="popup__content">
+                  <div id="main-form-wrapper">
+                      <form class="form js-form-validate" action="#">
+                          <div class="form-1 form-display--none opened">
+                            <div class="form__row form__row--payment">
+                                <div class="form__item">
+                                  <div class="form__label-wrap">
+                                    <label class="form__label">Сумма пополнения</label>
+                                  </div>
+                                  <div class="form__group">
+                                    <div class="form__group-row">
+                                        <div class="form__input ">
+                                          <input required name="" class="form-control" type="text" placeholder="Мин: 5000">
+                                        </div>
+                                        <div class="form__amount">
+                                          <div class="form__amount-item">
+                                            <p>Минимум: <span>5000 сум</span></p>
+                                          </div>
+                                          <div class="form__amount-item">
+                                            <p>Максимум: <span>10 000 000 сум</span></p>
+                                          </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="form__item">
+                                  <div class="form__group">
+                                      <div class="form__group-row">
+                                          <div class="form__input">
+                                            <input required class="form-control js-card-input" type='text' maxlength="19" placeholder="Введите номер карты">
+                                          </div>
+                                          <div class="form__input form__input--small">
+                                            <input  required class="form-control js-card-date" type="text" maxlength="5" type="text" placeholder="ММ / ГГ">
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="popup-payment__wrapper">
+                                <a href="#" class="btn btn-primary next">Далее</a>
+                                <div class="popup-payment__total">1/2</div>
+                            </div>
+                          </div>
+                          <div class="form-2 form-display--none">
+                          <div class="form__row">
+                              <div class="form__item">
+                                <div class="form__label-wrap">
+                                  <label class="form__label">Ведите код из СМС</label>
+                                </div>
+                                <div class="form__group">
+                                  <div class="form__input ">
+                                    <input class="form-control" required type="number" placeholder="Введите код из смс">
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="popup-payment__wrapper">
+                              <button type="button" class="btn btn-primary next">Пополнить счет</button>
+                              <div class="popup-payment__total">2/2</div>
+                          </div>
+                          </div>
+                          <div class="form-3 form-display--none">
+                              <div class="popup-payment__success">
+                                <div class="popup-payment__icone">
+                                  <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M72.1024 34.1347C73.6282 35.6606 73.6282 38.134 72.1024 39.6591L45.8969 65.8653C44.371 67.3904 41.8983 67.3904 40.3725 65.8653L27.8976 53.3897C26.3718 51.8646 26.3718 49.3912 27.8976 47.8661C29.4228 46.3402 31.8962 46.3402 33.4213 47.8661L43.1343 57.579L66.5779 34.1347C68.1038 32.6096 70.5772 32.6096 72.1024 34.1347ZM100 50C100 77.6375 77.6337 100 50 100C22.3625 100 0 77.6337 0 50C0 22.3625 22.3663 0 50 0C77.6375 0 100 22.3663 100 50ZM92.1875 50C92.1875 26.6808 73.3162 7.8125 50 7.8125C26.6808 7.8125 7.8125 26.6838 7.8125 50C7.8125 73.3192 26.6838 92.1875 50 92.1875C73.3192 92.1875 92.1875 73.3162 92.1875 50Z" fill="url(#paint0_linear_284:20458)"/>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_284:20458" x1="0" y1="100" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#24B976"/>
+                                    <stop offset="1" stop-color="#4AD395"/>
+                                    </linearGradient>
+                                    </defs>
+                                    </svg>
+                              </div>
+                              <p>Вы успешно пополнили счет</p>
+                              </div>
+                          </div>
+                      </form>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Модалка под мобильное меню (Десктоп ссылки по страницам тендеры) -->
+<div class="popup global-link-popup popup-tenders-links">
+  <div class="popup__wrapper">
+      <div class="popup__inner">
+        <button class="popup-links__btn-close popup__btn-close"></button>
+        <div class="popup__body">
+          <div class="page-btn">
+            <button data-src="tenders.html" class="js-btn-link-heirdom button-for-link">Исполнитель не выбран <span>(3)</span></button>
+            <button data-src="tender-choice.html" class="js-btn-link-heirdom button-for-link">Исполнитель выбран <span>(4)</span></button>
+            <button data-src="tender-accepted.html" class="js-btn-link-heirdom button-for-link">Выполнено <span>(1)</span></button>
+            <button data-src="tender-cancel.html" class="js-btn-link-heirdom button-for-link">Отменен <span>(2)</span></button>
+         </div>
+          <div class="main-link-wrapper">
+              <a href="#" class="js-link-heirdom main-link-page btn btn-primary">Показать</a>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<!-- Модалка под мобильное меню (Десктоп ссылки по страницам Избранные исполнители) -->
+<div class="popup global-link-popup popup-favorite-links">
+  <div class="popup__wrapper">
+      <div class="popup__inner">
+        <button class="popup-links__btn-close popup__btn-close"></button>
+        <div class="popup__body">
+          <div class="page-btn">
+            <button data-src="favorite-specialist.html" class="js-btn-link-heirdom button-for-link">Блог и соц сети <span>(3)</span></button>
+            <button data-src="favorite-specialist.html" class="js-btn-link-heirdom button-for-link">Дизайн <span>(12)</span></button>
+            <button data-src="favorite-specialist.html" class="js-btn-link-heirdom button-for-link">Разработка и IT <span>(1)</span></button>
+            <button data-src="favorite-specialist.html" class="js-btn-link-heirdom button-for-link">Тексты и переводы</button>
+            <button data-src="favorite-specialist.html" class="js-btn-link-heirdom button-for-link">SEO и трафик</button>
+            <button data-src="favorite-specialist.html" class="js-btn-link-heirdom button-for-link">Аудио, видео, съемка</button>
+         </div>
+          <div class="main-link-wrapper">
+              <a href="#" class="js-link-heirdom main-link-page btn btn-primary">Показать</a>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<!-- Модалка под мобильное меню (Десктоп ссылки по страницам Все специалисты) -->
+<div class="popup global-link-popup popup-all-specialist-links">
+  <div class="popup__wrapper">
+      <div class="popup__inner">
+        <button class="popup-links__btn-close popup__btn-close"></button>
+        <div class="popup__body">
+          <div class="page-btn">
+            <button data-src="favorite-specialist.html" class="js-btn-link-heirdom button-for-link">Блог и соц сети</button>
+            <button data-src="favorite-specialist.html" class="js-btn-link-heirdom button-for-link">Дизайн</button>
+            <button data-src="favorite-specialist.html" class="js-btn-link-heirdom button-for-link">Разработка и IT</button>
+            <button data-src="favorite-specialist.html" class="js-btn-link-heirdom button-for-link">Тексты и переводы</button>
+            <button data-src="favorite-specialist.html" class="js-btn-link-heirdom button-for-link">SEO и трафик</button>
+            <button data-src="favorite-specialist.html" class="js-btn-link-heirdom button-for-link">Аудио, видео, съемка</button>
+         </div>
+          <div class="main-link-wrapper">
+              <a href="#" class="js-link-heirdom main-link-page btn btn-primary">Показать</a>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<!-- Модалка под мобильное меню (Отклики и предложения) -->
+<div class="popup global-link-popup popup-feedback">
+  <div class="popup__wrapper">
+      <div class="popup__inner">
+        <button class="popup-links__btn-close popup__btn-close"></button>
+        <div class="popup__body">
+          <div class="page-btn">
+            <button data-src="feedback.html" class="js-btn-link-heirdom button-for-link">Отклики на тендеры <span>(56)</span</button>
+            <button data-src="feedback.html" class="js-btn-link-heirdom button-for-link">Уникальные предложения <span>(3)</span></button>
+            <button data-src="feedback.html" class="js-btn-link-heirdom button-for-link">Победы <span>(1)</span></button>
+            <button data-src="feedback.html" class="js-btn-link-heirdom button-for-link">Отказ <span>(1)</span></button>
+         </div>
+          <div class="main-link-wrapper">
+              <a href="#" class="js-link-heirdom main-link-page btn btn-primary">Показать</a>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<!-- Модалка на отклик respone -->
+<div class="popup popup-response">
+  <div class="popup__wrapper">
+      <div class="popup__inner">
+        <div class="popup__body">
+          <button class="popup__btn-global popup__btn-close"></button>
+          <div class="popup-response__head">
+            <div class="popup-response__intro">
+              <div class="popup-response__avatar">
+                  <img src="img/aspirant/aspirant-1.png" alt="">
+              </div>
+              <div class="popup-response__info">
+                  <h6 class="popup-response__title">Оксана Алимова</h6>
+                  <div class="popup-response__date">22 июня, 11:51</div>
+                  <div class="popup-response__ratings">
+                    <div class="rating rating__set">
+    <div class="rating__body">
+      <div class="rating__active"></div>
+      <div class="rating__items">
+        <input type="radio" class="rating__item" value="1" name="rating"></input>
+        <input type="radio" class="rating__item" value="2" name="rating"></input>
+        <input type="radio" class="rating__item" value="3" name="rating"></input>
+        <input type="radio" class="rating__item" value="4" name="rating"></input>
+        <input type="radio" class="rating__item" value="5" name="rating"></input>
+      </div>
+    </div>
+    <div class="rating__value">4.4</div>
+</div>
+ 
+                  </div>
+              </div>
+            </div>
+            <h4 class="popup-response__text title title-secondary">Отклик</h4>
+          </div>
+          <div class="popup__content">
+              <div class="popup-response__desc">
+                <p>Привет!  Посмотрите мою последнюю работу 
+                  Думаю вам нужна такая стилистика. Я с радостью помогу решить задачу если договоримся)</p>
+              </div>
+              <div class="popup-response__field">
+                  <div class="field">
+                    <div class="field__row">
+                      <div class="field__item">
+                        <div class="field__body">
+                          <div class="field__icone">
+                            <i class="mc-calendar"></i>       
+                          </div>
+                          <div class="field__info">
+                            <p>Срок выполнения:</p>
+                            <div class="field__info-current">15 дней</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="field__item">
+                        <div class="field__body">
+                          <div class="field__icone">
+                            <i class="mc-wallet"></i>
+                          </div>
+                          <div class="field__info">
+                            <p>Предложение исполнителя:</p>
+                            <div class="field__info-current">5 000 000 сум</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="popup-response__wrapp">
+                <div class="popup-response__row">
+                  <div class="popup-response__btn">
+                    <button class="popup__btn btn btn-danger"> <i class="mc-close"></i> Отказать исполнителю</button>
+                  </div>
+                  <div class="popup-response__btn">
+                    <button class="popup__btn btn btn-primary"> <i class="mc-check"></i> Выбрать этого исполнителя</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<!-- Модалка отмены заказа -->
+<div class="popup cancel-order">
+  <div class="popup__wrapper">
+      <div class="popup__inner">
+          <div class="popup__body">
+              <div class="popup__head">
+                <div class="popup__head-row">
+                    <h3 class="popup__title title title-secondary">Уточните причины отмены</h3>
+                </div>
+                <button class="popup__btn-close"></button>
+              </div>
+              <div class="popup__content">
+                    <form class="form" action="#">
+                        <div class="cancel-order__content">
+                          <div class="cancel-order__check">
+                            <label class="checkbox">
+                              Причина №1 
+                            <input class="checkbox__input" type="checkbox">
+                            <span class="checkbox__span"></span>
+                            </label>
+                          </div>
+                          <div class="cancel-order__check">
+                            <label class="checkbox">
+                              Причина №2 
+                            <input class="checkbox__input" type="checkbox">
+                            <span class="checkbox__span"></span>
+                            </label>
+                          </div>
+                          <div class="cancel-order__check">
+                            <label class="checkbox">
+                              Причина №3
+                            <input class="checkbox__input" type="checkbox">
+                            <span class="checkbox__span"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="form__row">
+                          <div class="form__item">
+                            <div class="form__label-wrap">
+                                <label class="form__label">Ваш вариант:</label>
+                            </div>
+                            <div class="form__group">
+                              <div class="form__input">
+                                  <textarea class="form-control" placeholder="Опишите ситуацию"></textarea>
+                              </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="cancel-order__wrap">
+                            <div class="cancel-order__item">
+                              <button class="cancel-order__btn btn btn-danger">Отменить заказ</button>
+                            </div>
+                            <div class="cancel-order__item">
+                              <button class="cancel-order__btn btn btn-default btn-default--border">Вернуться к заказу</button>
+                            </div>
+                        </div>
+                    </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Модалка на отклик orders -->
+<div class="popup popup-main popup-offer">
+  <div class="popup__wrapper">
+      <div class="popup__inner">
+        <div class="popup__body">
+          <button class="popup__btn-global popup__btn-close"></button>
+          <div class="popup-main__head">
+            <h4 class="popup-main__text title title-secondary">Предложить заказ</h4>
+          </div>
+          <form class="popup-form" action="#">
+            <div class="popup__content">
+                <div class="request">
+                    <div class="request__row">
+                      <div class="request__intro">
+                        <div class="request__profile">
+                          <div class="request__avatar">
+                            <span class="user-avatar">
+                              <img src="img/host-image/host-image-2.png" alt="">
+                           </span>
+                          </div>
+                          <div class="request__name">Анна</div>
+                          <div class="request__time">
+                            <div class="time-profile time-profile--online">Онлайн</div>
+                          </div>
+                        </div>
+                        <p>Старт продаж по монетизации телеграм 🔥 ⠀ 📗Здесь #инстаfишки ✏️Упаковка вашего бизнеса ⠀ Помогу заработать первый МИЛЛИОН 💰</p>
+                      </div>
+                      <div class="request__info">
+                        <div class="form__row">
+                          <div class="form__item mb-20">
+                               <div class="form__label-wrap">
+                                  <label class="request__label">Предложите продавцу выполнить ваш заказ. Опишите, что именно вам нужно, укажите желаемый бюджет и срок выполнения.</label>
+                               </div>
+                              <div class="form__group">
+                                  <div class="form__input">
+                                      <textarea placeholder="Опишите ситуацию" class="form-control"></textarea>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="form__item form__item--half">
+                            <div class="form__label-wrap">
+                               <label class="form__label">Бюджет</label>
+                            </div>
+                           <div class="form__group">
+                               <div class="form__input">
+                                   <input class="form-control" type="text" >
+                               </div>
+                           </div>
+                          </div>
+                          <div class="form__item form__item--half">
+                            <div class="form__label-wrap">
+                              <label class="form__label">Срок выполнения:</label>
+                            </div>
+                          <div class="form__group">
+                              <div class="form__input">
+                                  <input class="form-control" type="text" >
+                              </div>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="popup-gl-btns">
+                  <div class="popup-gl-btns__row">
+                    <div class="popup-gl-btns__item">
+                      <button class="popup-gl-btns__btn btn btn-danger">Отменить</button>
+                    </div>
+                    <div class="popup-gl-btns__item">
+                      <button class="popup-gl-btns__btn btn btn-primary">Отправить сообшение</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </form>
+        </div>
+      </div>
+  </div>
+</div>
+
+<!-- Модалка отправки сообщения -->
+<div class="popup popup-main popup-message">
+  <div class="popup__wrapper">
+      <div class="popup__inner">
+        <div class="popup__body">
+          <button class="popup__btn-global popup__btn-close"></button>
+          <div class="popup-main__head">
+            <h4 class="popup-main__text title title-secondary">Отправить сообщение</h4>
+          </div>
+          <form class="popup-form" action="#">
+            <div class="popup__content">
+                <div class="request">
+                    <div class="request__row">
+                      <div class="request__intro">
+                        <div class="request__profile">
+                          <div class="request__avatar">
+                            <span class="user-avatar">
+                              <img src="img/host-image/host-image-2.png" alt="">
+                           </span>
+                          </div>
+                          <div class="request__name">Анна</div>
+                          <div class="request__time">
+                            <div class="time-profile time-profile--online">Онлайн</div>
+                          </div>
+                        </div>
+                        <p>Старт продаж по монетизации телеграм 🔥 ⠀ 📗Здесь #инстаfишки ✏️Упаковка вашего бизнеса ⠀ Помогу заработать первый МИЛЛИОН 💰</p>
+                      </div>
+                      <div class="request__info">
+                        <div class="form__row">
+                          <div class="form__item">
+                               <div class="form__label-wrap">
+                                  <label class="request__label">Предоставив подробные сведения, вы повысите шансы на получение ответа</label>
+                               </div>
+                              <div class="form__group">
+                                  <div class="form__input">
+                                      <textarea placeholder="Опишите ситуацию" class="form-control"></textarea>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="popup-gl-btns popup-gl-btns--st">
+                  <div class="popup-gl-btns__row">
+                    <div class="popup-gl-btns__item">
+                      <button class="popup-gl-btns__btn btn btn-danger">Отменить</button>
+                    </div>
+                    <div class="popup-gl-btns__item">
+                      <button class="popup-gl-btns__btn btn btn-primary">Отправить сообщение</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </form>
+        </div>
+      </div>
+  </div>
+</div>
+
+<!-- Модалка отправки сообщения -->
+<div class="popup popup-main popup-message-second">
+  <div class="popup__wrapper">
+      <div class="popup__inner">
+        <div class="popup__body">
+          <button class="popup__btn-global popup__btn-close"></button>
+          <div class="popup-main__head">
+            <h4 class="popup-main__text title title-secondary">Отправить сообщение</h4>
+          </div>
+          <form class="popup-form" action="#">
+            <div class="popup__content">
+                <div class="request">
+                    <div class="request__row">
+                      <div class="request__intro">
+                        <div class="request__profile">
+                          <div class="request__avatar">
+                            <span class="user-avatar">
+                              <img src="img/host-image/host-image-1.png" alt="">
+                           </span>
+                          </div>
+                          <div class="request__name">Александр</div>
+                          <div class="request__time">
+                            <div class="time-profile time-profile--online">Онлайн</div>
+                          </div>
+                        </div>
+                        <div class="request__desc">
+                          <p >Компания: OOO “Faraway Ltd”</p>
+                          <a href="#">company.com</a>
+                        </div>
+                       
+                      </div>
+                      <div class="request__info">
+                        <div class="form__row">
+                          <div class="form__item">
+                               <div class="form__label-wrap">
+                                  <label class="request__label">Предоставив подробные сведения, вы повысите шансы на получение ответа</label>
+                               </div>
+                              <div class="form__group">
+                                  <div class="form__input">
+                                      <textarea placeholder="Опишите ситуацию" class="form-control"></textarea>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="popup-gl-btns popup-gl-btns--st">
+                  <div class="popup-gl-btns__row">
+                    <div class="popup-gl-btns__item">
+                      <button class="popup-gl-btns__btn btn btn-danger">Отменить</button>
+                    </div>
+                    <div class="popup-gl-btns__item">
+                      <button class="popup-gl-btns__btn btn btn-primary">Отправить сообщение</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </form>
+        </div>
+      </div>
+  </div>
+</div>
+
+<!-- Принять работу -->
+<div class="popup popup-main accept-work">
+  <div class="popup__wrapper">
+    <div class="popup__inner">
+      <div class="popup__body">
+          <div class="popup__head">
+            <div class="popup__head-row">
+                <h3 class="popup__title title title-secondary">Принять работу</h3>
+            </div>
+            <button class="popup__btn-close"></button>
+          </div>
+          <div class="popup__content">
+            <form action="" class="form">
+              <div class="accept-work__reviews">
+                <div class="accept-work__text">Оцените Заказчика:</div>
+                <div class="accept-work__raitings">
+                  <div class="rating rating__set">
+    <div class="rating__body">
+      <div class="rating__active"></div>
+      <div class="rating__items">
+        <input type="radio" class="rating__item" value="1" name="rating"></input>
+        <input type="radio" class="rating__item" value="2" name="rating"></input>
+        <input type="radio" class="rating__item" value="3" name="rating"></input>
+        <input type="radio" class="rating__item" value="4" name="rating"></input>
+        <input type="radio" class="rating__item" value="5" name="rating"></input>
+      </div>
+    </div>
+    <div class="rating__value">4.4</div>
+</div>
+ 
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="form__item">
+                  <div class="form__group">
+                    <div class="form__input">
+                        <textarea class="form-control" placeholder="Напишите отзыв"></textarea>
+                    </div>
+                  </div>
+              </div>
+              </div>
+              <div class="popup-gl-btns popup-gl-btns--st">
+                <div class="popup-gl-btns__row">
+                  <div class="popup-gl-btns__item">
+                    <button class="popup-gl-btns__btn btn btn-danger">Отменить</button>
+                  </div>
+                  <div class="popup-gl-btns__item">
+                    <button class="popup-gl-btns__btn btn btn-primary">Принять и отправить отзыв</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Модалка на вывод средств -->
+<div class="popup popup-output">
+  <div class="popup__wrapper">
+      <div class="popup__inner">
+          <div class="popup__body">
+              <div class="popup__head">
+                <div class="popup__head-row">
+                    <div class="popup__head-icone">
+                        <i class="mc-wallet"></i>
+                    </div>
+                    <h3 class="popup__title title title-secondary">Заявки на вывод средств</h3>
+                </div>
+                <button class="popup__btn-close"></button>
+              </div>
+              <div class="popup__content">
+                  <div class="popup-output__content">
+                      <h4 class="popup-output__title">Инструкция по выводу средств</h4>
+                      <ul class="popup-output__list">
+                          <li>Выберите платежную систему</li>
+                          <li>Введите сумму (минимальная сумма для вывода - 10 000 сум)</li>
+                          <li>Внимание! Убедитесь в правильности Ваших платежных реквизитов</li>
+                      </ul>
+                      <div class="available mb-30">
+                          <span class="available__text">Доступные средства:</span>
+                          <div class="available__total">550 000 сум</div>
+                      </div>
+                  </div>
+                  <form class="form js-form-validate" action="#">
+                        <div class="form__row form__row--payment">
+                            <div class="form__item">
+                              <div class="form__label-wrap">
+                                <label class="form__label">Номер карты:</label>
+                              </div>
+                              <div class="form__group">
+                                <div class="form__group-row">
+                                    <div class="form__input">
+                                      <input required name="" class="form-control" type="text" placeholder="Мин: 5000">
+                                    </div>
+                                    <div class="popup-output__check">
+                                        <label class="checkbox checkbox--check">
+                                          Моя карта
+                                        <input class="checkbox__input" type="checkbox" checked="">
+                                        <span class="checkbox__span"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form__item">
+                              <div class="form__label-wrap">
+                                <label class="form__label">Сумма пополнения:</label>
+                              </div>
+                              <div class="form__group">
+                                  <div class="form__group-row">
+                                      <div class="form__input">
+                                        <input required class="form-control" id="card" type='text' maxlength="19" placeholder="Введите номер карты">
+                                      </div>
+                                      <div class="form__amount">
+                                        <div class="form__amount-item">
+                                          <p>Минимум: <span>5000 сум</span></p>
+                                        </div>
+                                        <div class="form__amount-item">
+                                          <p>Максимум: <span>10 000 000 сум</span></p>
+                                        </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="popup-output__btns">
+                          <div class="popup-gl-btns">
+                            <div class="popup-gl-btns__row">
+                              <div class="popup-gl-btns__item">
+                                <button class="popup-gl-btns__btn btn btn-danger">Отменить</button>
+                              </div>
+                              <div class="popup-gl-btns__item">
+                                <button class="popup-gl-btns__btn btn btn-primary">Вывести средства</button>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Модалка на добавление карты -->
+<div class="popup add-card">
+  <div class="popup__wrapper">
+      <div class="popup__inner">
+          <div class="popup__body">
+              <div class="popup__head">
+                <div class="popup__head-row">
+                    <div class="popup__head-icone">
+                        <i class="mc-wallet"></i>
+                    </div>
+                    <h3 class="popup__title title title-secondary">Добавить карту</h3>
+                </div>
+                <button class="popup__btn-close"></button>
+              </div>
+              <div class="popup__content">
+                  <form class="form js-form-validate" action="#">
+                        <div class="form__row form__row--payment">
+                            <div class="form__item">
+                              <div class="form__label-wrap">
+                                <label class="form__label">Название карты:</label>
+                              </div>
+                              <div class="form__group">
+                                <div class="form__group-row">
+                                  <div class="form__input">
+                                    <input required name="" class="form-control" type="text" placeholder="Адрес">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form__item">
+                              <div class="form__label-wrap">
+                                <label class="form__label">Номер карты:</label>
+                              </div>
+                              <div class="form__group-row">
+                                <div class="form__input">
+                                  <input required name="numberCard" class="form-control js-card-input" type='text' maxlength="19"       placeholder="Введите номер карты">
+                                </div>
+                                <div class="form__input form__input--small">
+                                  <input required name="date" class="form-control js-card-date" type="text" maxlength="5" type="text" placeholder="ММ / ГГ">
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="add-card__wrap">
+                            <div class="popup-gl-btns">
+                              <div class="popup-gl-btns__row">
+                                <div class="popup-gl-btns__item">
+                                  <button class="popup-gl-btns__btn btn btn-primary">Добавить карту</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Модалка на заказ карты -->
+<div class="popup order-card">
+  <div class="popup__wrapper">
+      <div class="popup__inner">
+          <div class="popup__body">
+              <div class="popup__head">
+                <div class="popup__head-row">
+                    <div class="popup__head-icone">
+                        <i class="mc-wallet"></i>
+                    </div>
+                    <h3 class="popup__title title title-secondary">Добавить карту</h3>
+                </div>
+                <button class="popup__btn-close"></button>
+              </div>
+              <div class="popup__content">
+                  <div class="order-card__content">
+                      <p class="order-card__desc">Внимание, в данное время карта доступна к выпуску только в г.Самарканд, Термез, Бухара, Нукус, Наманган, Фергана, Коканд, андижан и Ташкент.</p>
+                      <div class="order-card__info">
+                          <h4 class="order-card__title">Условия по карте:</h4>
+                          <div class="order-card__row">
+                              <div class="order-card__item">
+                                <p>Выпуск карты: <span>30,000 сум</span></p>
+                                <p>Доставка: <span>10,000 сум</span></p>
+
+                              </div>
+                              <div class="order-card__item">
+                                <p>Обслуживание карты: <span>Бесплатно</span></p>
+                                <p>Срок действия карты:<span> 5 лет</span></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <form class="form js-form-validate" action="#">
+                        <div class="form__row ">
+                            <div class="form__item">
+                              <div class="form__label-wrap">
+                                <label class="form__label">Укажите город:</label>
+                              </div>
+                              <div class="form__group">
+                                  <div class="form__input">
+                                    <div class="form__select choices-gray">
+                                      <select required name="" class="currensy-select js-select" name="country">
+                                        <option value="">Выберите город</option>
+                                        <option value="">Ташкент</option>
+                                        <option value="">Бухара</option>
+                                        <option value="">Самарканд</option>
+                                      </select>  
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="form__item">
+                              <div class="form__label-wrap">
+                                  <label class="form__label">Адрес:</label>
+                              </div>
+                                <div class="form__input">
+                                  <input required class="form-control" type='text' placeholder="Адрес">
+                                </div>
+                          </div>
+                        </div>
+                        <div class="order-card__wrap">
+                            <div class="popup-gl-btns">
+                              <div class="popup-gl-btns__row">
+                                <div class="popup-gl-btns__item">
+                                  <button class="popup-gl-btns__btn btn btn-primary">Заказать карту</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Модалка под статистику -->
+<div class="popup popup-stat">
+  <div class="popup__wrapper">
+      <div class="popup__inner">
+          <div class="popup__body">
+              <div class="popup__head">
+                <div class="popup__head-row">
+                    <h3 class="popup__title title title-secondary">Статистика</h3>
+                </div>
+                <button class="popup__btn-close"></button>
+              </div>
+              <div class="popup__content">
+                  <div class="image-popup">
+                    <div class="image-popup__row">
+                      <div class="image-popup__item">
+                        <div class="image-popup__body">
+                          <img src="img/slider-statistic/statistic-bloger-1.png" alt="">
+                        </div>
+                        
+                      </div>
+                      <div class="image-popup__item">
+                        <div class="image-popup__body">
+                          <img src="img/slider-statistic/statistic-bloger-1.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="popup popup-questions">
+  <div class="popup__wrapper">
+      <div class="popup__inner">
+          <div class="popup__body">
+              <div class="popup__head">
+                <div class="popup__head-row">
+                    <h3 class="popup__title title title-secondary">Задать вопрос</h3>
+                </div>
+                <button class="popup__btn-close"></button>
+              </div>
+              <div class="popup__content">
+                  <form action="" class="popup__form">
+                    <div class="form__row">
+                      <div class="form__item">
+                           <div class="form__label-wrap">
+                           </div>
+                          <div class="form__group">
+                              <div class="form__input">
+                                  <textarea placeholder="Напишите свой вопрос" class="form-control"></textarea>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </form>
+                <div class="popup-gl-btns popup-gl-btns--st">
+                  <div class="popup-gl-btns__row">
+                    <div class="popup-gl-btns__item">
+                      <button class="popup-gl-btns__btn btn btn-danger">Отменить</button>
+                    </div>
+                    <div class="popup-gl-btns__item">
+                      <button class="popup-gl-btns__btn btn btn-primary">Отправить сообшение</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+        <script>
+            let headerDoer = document.querySelector('.header');
+            if (headerDoer) {
+                headerDoer.classList.add('header--doer');
+            }
+        </script>
+        <!-- ?Основной контент -->
+        <main class="main-wrapper mt-page">
+            <div class="main-wrapper__content">
+                <section class="settings-user">
+                    <div class="settings-user__intro mb-40">
+                        <div class="settings-user__head block-header">
+                            <div class="block-header__content m-neg">
+                                <h2 class="title title-primary pd-pr ">Настройки профиля</h2>
+                                <div class="block-header__info settings-user--verification pd-pr ">
+                                    <div class="verification">
+                                        <div class="verification__current">
+                                            <div class="verification__icon">
+                                                <i class="mc-check"></i>
+                                            </div>
+                                            <p class="verification__text">Вы верифицированы по номеру телефона</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="settings-user__wrapper">
+                         <div class="settings-user__row">
+                             <div class="settings-user__info">
+                                 <div class="settings-user__links links-user block-style-any">
+                                    <div class="links-user__item">
+                                        <a class="links-user__link active" href="settings-doer-main.html">Основные настройки</a>
+                                    </div>
+                                    <div class="links-user__item">
+                                        <a class="links-user__link" href="settings-doer-info.html">Личная информация</a>
+                                    </div>
+                                    <div class="links-user__item">
+                                        <a class="links-user__link" href="settings-doer-spec.html">Специализация</a>
+                                    </div>
+                                    <div class="links-user__item">
+                                        <a class="links-user__link" href="settings-doer-works.html">Портфолио</a>
+                                    </div>
+                                    <div class="links-user__item">
+                                        <a class="links-user__link" href="settings-doer-contact.html">Контакты</a>
+                                    </div>
+                                    <div class="links-user__item">
+                                        <a class="links-user__link" href="settings-doer-set.html">Настройки блогера</a>
+                                    </div>
+                                 </div>
+                                 <button class="settings-user__delete">Удалить аккаунт</button>
+                                 <div class="settings-user__reference reference mt-30">
+                                    <div class="reference__item">
+                                        <p>Получить новости</p>
+                                        <label class="switch">
+                                            <input checked class="switch__check" type="checkbox">
+                                            <span class="switch__slide round"></span>
+                                        </label>
+                                    </div>
+                                    <div class="reference__item">
+                                        <p>Получить рекомендации</p>
+                                        <label class="switch">
+                                            <input class="switch__check" type="checkbox">
+                                            <span class="switch__slide  round"></span>
+                                        </label>
+                                    </div>
+                                 </div>
+                             </div>
+                             <div class="settings-user__main">
+                                <div class="tabs-user mb-30">
+                                    <div class="tabs-user__row">
+                                        <div class="tabs-user__item">
+                                            <div class="tabs-user__body">
+                                                <button class="tabs-user__btn js-tabs-btn" data-tab="#tabs-1">Изменить мобильный телефон</button>
+                                            </div>
+                                        </div>
+                                        <div class="tabs-user__item">
+                                        <div class="tabs-user__body">
+                                            <button class="tabs-user__btn js-tabs-btn" data-tab="#tabs-2">Изменить пароль</button>
+                                        </div>
+                                    </div>
+                                    <div class="tabs-user__item">
+                                        <div class="tabs-user__body">
+                                            <button class="tabs-user__btn js-tabs-btn" data-tab="#tabs-3">Изменить email-адрес</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="settings-user__form">
+                                       <!-- Пока неизвестно в каких полях нужна валидация (Чтоб включить задать инпут name и повесить required) -->
+                                        <div class="settings-user__content tabs-content" id="tabs-1">
+                                            <form class="form js-form-validate" action="#">
+                                                <div class="settings-user__link">
+                                                    <p>Телефон:</p>
+                                                    <a href="tel:+9989999999">+998 999 99 99</a>
+                                                </div>
+                                                <div class="form__content">
+                                                        <div class="form__row">
+                                                        <div class="form__item">
+                                                            <div class="form__label-wrap">
+                                                                <label class="form__label">Новый мобильный телефон</label>
+                                                            </div>
+                                                            <div class="form__group">
+                                                            <div class="form__input">
+                                                                <input class="form-control" type="tel" placeholder="Номер телефона">
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form__item">
+                                                            <div class="form__label-wrap">
+                                                                <label class="form__label">Ваш текущий пароль</label>
+                                                            </div>
+                                                            <div class="form__group">
+                                                                <div class="form__input">
+                                                                    <div class="icone-form-icone">
+                                                                        <i class="mc-pass"></i>
+                                                                    </div>
+                                                                    <input class="form-control form-control-icone js-pass-enter" type="password" placeholder="Введите пароль">
+                                                                    <button type="button" class="btn-see js-pass-see"><i class="mc-eye"></i></button>
+                                                                </div>
+                                                            </div>
+                                                            <a href="#" class="form__forgot-link">Забыли пароль</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings-user__form-btn">
+                                                    <button class="btn btn-default btn-default--border">Отменить</button>
+                                                    <button class="btn btn-primary">Сохранить</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="settings-user__content tabs-content" id="tabs-2">
+                                            <form action="#" class="form js-form-validate">
+                                                <div class="form__content">
+                                                <div class="form__row">
+                                                        <div class="form__item">
+                                                            <div class="form__label-wrap">
+                                                                <label class="form__label">Старый пароль</label>
+                                                            </div>
+                                                            <div class="form__group">
+                                                                <div class="form__input">
+                                                                    <div class="icone-form-icone">
+                                                                        <i class="mc-pass"></i>
+                                                                    </div>
+                                                                    <input class="form-control form-control-icone js-pass-enter" type="password" placeholder="Введите пароль">
+                                                                    <button type="button" class="btn-see js-pass-see"><i class="mc-eye"></i></button>
+                                                                </div>
+                                                                <a href="#" class="form__forgot-link">Забыли пароль</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form__item">
+                                                            <div class="form__label-wrap">
+                                                                <label class="form__label">Новый пароль</label>
+                                                            </div>
+                                                            <div class="form__group">
+                                                                <div class="form__input">
+                                                                    <div class="icone-form-icone">
+                                                                        <i class="mc-pass"></i>
+                                                                    </div>
+                                                                    <input class="form-control form-control-icone js-pass-enter" type="password" placeholder="Введите пароль">
+                                                                    <button type="button" class="btn-see js-pass-see"><i class="mc-eye"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form__item">
+                                                            <div class="form__label-wrap">
+                                                                <label class="form__label">Повторите пароль</label>
+                                                            </div>
+                                                            <div class="form__group">
+                                                                <div class="form__input">
+                                                                    <div class="icone-form-icone">
+                                                                        <i class="mc-pass"></i>
+                                                                    </div>
+                                                                    <input class="form-control form-control-icone js-pass-enter" type="password" placeholder="Введите пароль">
+                                                                    <button type="button" class="btn-see js-pass-see"><i class="mc-eye"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                                </div>
+                                                <div class="settings-user__form-btn">
+                                                    <button class="btn btn-default btn-default--border">Отменить</button>
+                                                    <button class="btn btn-primary">Сохранить</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="settings-user__content tabs-content" id="tabs-3">
+                                            <form action="#" class="form js-form-validate">
+                                                <div class="settings-user__link link-user-mail">
+                                                    <p>Email:</p>
+                                                    <a href="mailto:zakzachik7777@gmail.com">zakzachik7777@gmail.com</a>
+                                                </div>                             
+                                                <div class="form__content">
+                                                    <div class="form__row">
+                                                        <div class="form__item">
+                                                            <div class="form__label-wrap">
+                                                                <label class="form__label">Новый email</label>
+                                                            </div>
+                                                            <div class="form__group">
+                                                            <div class="form__input ">
+                                                                <div class="icone-form-icone">
+                                                                    <img src="img/form-icone/form-icone-mail.svg" alt="">
+                                                                </div>
+                                                                <input class="form-control form-control-icone" type="email" placeholder="E-mail">
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form__item">
+                                                            <div class="form__label-wrap">
+                                                                <label class="form__label">Ваш текущий пароль</label>
+                                                            </div>
+                                                            <div class="form__group">
+                                                                <div class="form__input">
+                                                                    <div class="icone-form-icone">
+                                                                        <i class="mc-pass"></i>
+                                                                    </div>
+                                                                    <input class="form-control form-control-icone js-pass-enter" type="password" placeholder="Введите пароль">
+                                                                    <button type="button" class="btn-see js-pass-see"><i class="mc-eye"></i></button>
+                                                                </div>
+                                                            </div>
+                                                            <a href="#" class="form__forgot-link">Забыли пароль</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings-user__form-btn">
+                                                    <button class="btn btn-default btn-default--border">Отменить</button>
+                                                    <button class="btn btn-primary">Сохранить</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                </div>
+                             </div>
+                         </div>
+                     </div>
+                </section>
+            </div>
+        </main>
+        <!-- ?Подключение Footer -->
+        <footer class="footer footer-mobile--bottom">
+    <div class="_container">
+        <div class="footer__row">
+            <div class="footer__law">Все права защищены. ©  MediaLogo 2021</div>
+            <a href="https://www.life-style.uz/" target="_blank" class="footer__link">Создание сайта - <span>Life </span>Style</a>
+        </div>
+    </div>
+</footer>
+
+      </div>
+  </div>
+  <script src="libs/jquery.min.js"></script>
+  <script src="https://unpkg.com/dropzone@6.0.0-beta.1/dist/dropzone-min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0-rc"></script>
+  <script src="libs/noUiSlider.min.js"></script>
+  <script src="libs/jquery.amsify.suggestags.js"></script>
+  <script src="libs/validate.min.js"></script>
+  <script src="libs/fslightbox.js"></script>
+  <script src="libs/choices.min.js"></script>
+  <script src="libs/swiper.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

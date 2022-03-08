@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="robots" content="">
+  <link rel="short icon" href="">
+  <script src="https://kit.fontawesome.com/fe530b5d32.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="libs/swiper.min.css">
+  <link rel="stylesheet" href="libs/choices.min.css">
+  <link rel="stylesheet" href="libs/noUiSlider.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Регистрация</title>
+</head>
+<body>
+  <div class="page-flex">
+      <div class="main">
+        <!-- ?Основной контент -->
+        <main class="registration">
+            <div class="registration__row">
+                <div class="registration__intro">
+                    <div class="registration__content">
+                        <div class="registration__form-first">
+                            <div class="registration__head">
+                                <h2 class="registration__title title title-primary">Регистрация</h2>
+                            </div>
+                            <form action="#" class="registration__form js-form-validate">
+                                    <div class="form__row">
+                                        <div class="form__item">
+                                            <div class="form__label-wrap">
+                                                <label class="form__label">Новый мобильный телефон</label>
+                                            </div>
+                                            <div class="form__group">
+                                                <div class="form__input ">
+                                                    <div class="icone-form-icone">
+                                                        <i class="mc-phone"></i>
+                                                    </div>
+                                                    <input name="tel" required class="form-control form-control-icone" type="tel" placeholder="Номер телефона">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form__item">
+                                            <div class="form__label-wrap">
+                                                <label class="form__label">Ваш текущий пароль</label>
+                                            </div>
+                                            <div class="form__group">
+                                                <div class="form__input">
+                                                    <div class="icone-form-icone">
+                                                        <i class="mc-pass"></i>
+                                                    </div>
+                                                    <input name="password" required class="form-control form-control-icone js-pass-enter" type="password" placeholder="Введите пароль">
+                                                    <button type="button" class="btn-see js-pass-see"><i class="mc-eye"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form__item">
+                                            <div class="form__label-wrap">
+                                                <label class="form__label">Повторите пароль</label>
+                                            </div>
+                                            <div class="form__group">
+                                                <div class="form__input">
+                                                    <div class="icone-form-icone">
+                                                        <i class="mc-pass"></i>
+                                                    </div>
+                                                    <input name="password-repeat" required class="form-control form-control-icone js-pass-enter" type="password" placeholder="Введите пароль">
+                                                    <button type="button" class="btn-see js-pass-see"><i class="mc-eye"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="registration__role role">
+                                        <div class="role__wrapper">
+                                            <p class="role__head">Роль:</p>
+                                            <div class="role__row">
+                                                <div class="role__item">
+                                                    <div class="custom-radios button-radios">
+                                                        <input type="radio" name="radio" id="role-1" checked="">
+                                                        <label for="role-1">Рекломадатель</label>
+                                                    </div>
+                                                </div>
+                                                <div class="role__item">
+                                                    <div class="custom-radios button-radios">
+                                                        <input type="radio" name="radio" id="role-2">
+                                                        <label for="role-2">Исполнитель</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="registration__accept">
+                                        <label class="checkbox checkbox--check">
+                                            Вы принимаете условия <span class="registration__accept-span">Пользовательского соглашения</span> 
+                                        <input class="checkbox__input" type="checkbox" checked="">
+                                        <span class="checkbox__span"></span>
+                                        </label>
+                                    </div>
+                                    <button class="form__btn btn btn-primary">Далее</button>
+                            </form>
+                            <div class="not-profile">
+                                <p>Ещё нет аккаунта?</p>
+                                <a href="entry.html" class="not-profile__link">войти</a>
+                            </div>
+                        </div>
+
+                        <div class="registration__form-second" style="display: none;">
+                            <div class="registration__head">
+                                <h2 class="registration__title title title-primary">Подтвердите регистрацию</h2>
+                                <p>На номер <val>+998 94 *********</val> был отправлен смс с 6-значным кодом</p>
+                            </div>
+                            <form action="#" class="registration__form js-form-validate">
+                                <div class="form__row">
+                                    <div class="form__item">
+                                        <div class="form__group">
+                                            <div class="form__input">
+                                                <input required class="form-control form-control--center" type="number" placeholder="Введите код активации">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form__item">
+                                        <div class="form__group">
+                                            <button class="form__btn btn btn-primary">Активировать</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="code-repeat">
+                                    <p>Если вы не видите письма по входящих, проверьте папку со спамом, а также другие папки, в которые письмо может попасть.</p>
+                                    <button class="code-repeat__btn">Отправить код повторно</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="registration__slider slider-intro">
+                    <div class="swiper-container slider-intro-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slider-intro__slide">
+                                    <div class="slider-intro__image">
+                                        <img src="img/registration/image-slider-registr.png" alt="">
+                                    </div>
+                                    <div class="slider-intro__desc">
+                                        <h3 class="slider-intro__desc-title">“Пожалуй, самая перспективная плошадка для фрилансеров!”</h3>
+                                        <div class="slider-intro__desc-profile profile-desc">
+                                            <div class="profile-desc__name">Анна Соловьева</div>
+                                            <p class="profile-desc__subtitle">Тревел блогер / Фрилансер</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-intro__arrows">
+                            <div class="swiper-button-prev button-prev slider-intro__prev">
+                                <svg width="14" height="14" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="white" d="M4.97656 5.99962L0.851562 1.87462L2.0299 0.696289L7.33323 5.99962L2.0299 11.303L0.851562 10.1246L4.97656 5.99962Z"></path>
+                                </svg>
+                            </div>
+                            <div class="swiper-button-next button-next slider-intro__next">
+                                <svg width="14" height="14"  viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="white" d="M4.97656 5.99962L0.851562 1.87462L2.0299 0.696289L7.33323 5.99962L2.0299 11.303L0.851562 10.1246L4.97656 5.99962Z"></path>
+                                  </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+      </div>
+  </div>
+  <script src="libs/jquery.min.js"></script>
+  <script src="https://unpkg.com/dropzone@6.0.0-beta.1/dist/dropzone-min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0-rc"></script>
+  <script src="libs/noUiSlider.min.js"></script>
+  <script src="libs/jquery.amsify.suggestags.js"></script>
+  <script src="libs/validate.min.js"></script>
+  <script src="libs/fslightbox.js"></script>
+  <script src="libs/choices.min.js"></script>
+  <script src="libs/swiper.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
